@@ -35,11 +35,11 @@ class TicketDetailView(DetailView):
 @login_required
 def user_logout(request):
     logout(request)
-    return HttpResponseRedirect(reverse('stl'))
+    return HttpResponseRedirect(reverse('support_ticket:index'))
 
-@login_required
-def special(request):
-    return HttpResponse("You are logged in!")
+# @login_required
+# def special(request):
+#     return HttpResponse("You are logged in!")
 
 
 def user_login(request):

@@ -15,12 +15,11 @@ class ServiceCenter(models.Model):
 
 # class UserProfileInfo(models.Model):
 #     user = models.OneToOneField(User,on_delete=models.PROTECT)
-#     portfolio_site = models.URLField(blank=True)
-#     protfolio_pic = models.ImageField(upload_to='profile_pics',blank=True)
+#     serviceCenter = models.ForeignKey(ServiceCenter,on_delete=models.PROTECT)
 
 
-    # def __str__(self):
-    #     return self.user.username
+#     def __str__(self):
+#         return self.user.username
 
 
 class Ticket(models.Model):
